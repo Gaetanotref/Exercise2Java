@@ -4,7 +4,8 @@ package it.develhope.Ex2;
 public class Competition {
     public static void main(String[] args) {
         //RULES
-    CompetitionRules.printRules();
+        CompetitionRules rules=CompetitionRules.getInstance();
+        CompetitionRules.printRules();
         //TEAM
         Team teamA=new Team();
         Team teamB=new Team();
