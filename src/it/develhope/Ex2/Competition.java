@@ -5,7 +5,7 @@ public class Competition {
     public static void main(String[] args) {
         //RULES
         CompetitionRules rules=CompetitionRules.getInstance();
-        CompetitionRules.printRules();
+        rules.printRules();
         //TEAM
         Team teamA=new Team();
         Team teamB=new Team();
@@ -13,11 +13,13 @@ public class Competition {
         teamB.teamName="TeamNumber2";
 
         //WHY I CAN'T MAKE THINGS EASIER WITH THIS?
-        teamA.p1.Programmer("Gaetano","Java",1);
-        teamA.p2.Programmer("Franco","python",1);
+        teamA.p1=new Programmer("Gaetano","Java",1);
+        teamA.p2=new Programmer("Mario","Javascript",2);
 
-        teamB.p1.Programmer("Ciccio","Java",12);
-        teamB.p2.Programmer("Lello","Python",4);
+
+        teamB.p1=new Programmer("Francesco","Java",4);
+
+        teamB.p2=new Programmer("Gaetano","Java",1);
 
         //PROGRAMMERS
         //TEAM A

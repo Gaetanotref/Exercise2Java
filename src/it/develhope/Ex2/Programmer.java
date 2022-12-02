@@ -1,19 +1,29 @@
 package it.develhope.Ex2;
 
 public class Programmer {
-    public String name;
-    public String programmingLanguage;
-    public int yearsOfExperience;
+    private String name;
+    private String programmingLanguage;
+    private int yearsOfExperience;
 
     //WHY I CAN'T MAKE THINGS EASIER WITH THIS?
-    public String Programmer(String name,String programmingLanguage, int yearsOfExperience){
-        this.name=name;
-        this.programmingLanguage=programmingLanguage;
-        this.yearsOfExperience=yearsOfExperience;
-        return name+programmingLanguage+yearsOfExperience;
+    public Programmer(String name, String programmingLanguage, int yearsOfExperience) {
+        this.name = name;
+        this.programmingLanguage = programmingLanguage;
+        this.yearsOfExperience = yearsOfExperience;
     }
 
-    public void printProgrammerDetails(String name,String programmingLanguage,int yearsOfExperience){
-        System.out.println(name+ " " +programmingLanguage+" "+yearsOfExperience);
+    public String getName(){
+        return name;
+    }
+    public String getProgrammingLanguage(){
+        return programmingLanguage;
+    }
+    public int getYearsOfExperience(){
+        return yearsOfExperience;
+    }
+
+
+    public void printProgrammerDetails() {
+        System.out.println(name + " " + programmingLanguage + " " + yearsOfExperience);
     }
 }
